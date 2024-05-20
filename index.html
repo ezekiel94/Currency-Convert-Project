@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+
+    <section class="section-container">
+            <div class="currency-container">
+                <div class="the-main-heading-text">
+                    <h5>Currency Converter</h5>
+                </div>
+
+                <form id="form" class="form">
+
+                    <div class="amount-container">
+                            <p>Enter Amount</p>
+                            <input type="text" value="1" name="amount" placeholder="Enter Amount" id="enterAmount">
+                    </div>
+
+                    <div class="various-country-currency" id="various-country-currency">
+                        <div class="from-container" id="the-from">
+                            <div class="the-from-and-to-text">
+                                <p>From</p>
+                            </div>
+
+                            <div class="the-flag-and-icon">
+                                <div class="flag">
+                                    <img src="https://flagsapi.com/US/flat/64.png">
+                                </div>
+
+                                <select class="select" id="select">
+                                    <!-- <option value="USD">USD</option>
+                                    <option value="CAD">CAD</option>
+                                    <option value="MAN">MAN</option>
+                                    <option value="INR">INR</option>
+                                    <option value="NPR">NPR</option> -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="the-converting-icon" id="converting-icon">
+                            <i class="ri-arrow-up-down-fill"></i>
+                        </div>
+
+                        <div class="to-container" id="the-to">
+                            <div class="the-from-and-to-text">
+                                <p>To</p>
+                            </div>
+
+                            <div class="the-flag-and-icon">
+                                <div class="flag">
+                                    <img src="https://flagsapi.com/DM/flat/64.png">
+                                </div>
+
+                                <select class="select" id="select">
+                                    <!-- <option value="USD">USD</option>
+                                    <option value="CAD">CAD</option>
+                                    <option value="MAN">MAN</option>
+                                    <option value="INR">INR</option>
+                                    <option value="NPR">NPR</option> -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="currency-exchange-value-display" id="exchange-display">
+                        <p>Getting exchange rate...</p>
+                    </div>
+
+                    <div class="the-button">
+                        <button type="submit">Get Exchange Rate</button>
+                    </div>
+
+            </form>
+
+            </div>
+    </section>
+    
+
+
+
+
+
+
+<script src="./js folder/country-list.js"></script>
+<script src="./js folder/index.js"></script>
+</body>
+</html>

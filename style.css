@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #000080;
+    --primary-color-dark: #17253E;
+    --text-dark: #000000;
+    --text-light: #333333;
+    --white: #ffffff;
+    /* --max-width: 1200px; */
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.section-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currency-container{
+    width: 30%;
+    height: auto;
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 0.5rem;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1.5rem;
+    /* margin: 10rem auto; */
+}
+
+.the-main-heading-text{
+    width: 100%;
+    height: auto;
+}
+
+.the-main-heading-text h5{
+    color: var(--text-dark);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+}
+
+.amount-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.amount-container p{
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.amount-container input{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 0.3rem;
+    border: none;
+    border: 1px solid #b9b9b9;
+    border-radius: 0.3rem;
+    outline: none;
+}
+
+.amount-container input:focus{
+    padding: 1rem;
+    border: 1.5px solid var(--primary-color-dark);
+}
+
+
+
+.various-country-currency{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    white-space: nonwrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.from-container{
+    width: fit-content;
+    height: auto;
+}
+
+.to-container{
+    width: fit-content;
+    height: auto;
+}
+
+.the-from-and-to-text{
+    width: fit-content;
+    height: auto;
+}
+
+.the-from-and-to-text p{
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.the-flag-and-icon{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #b9b9b9;
+    padding: 0.8rem 1rem;
+    border-radius: 0.2rem;
+}
+
+.flag{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.flag img{
+    width: 100%;
+    height: fit-content;
+}
+
+
+.select{
+    width: auto;
+    outline: none;
+    border: none;
+    font-size: 0.9rem;
+    margin: 0 -0.3rem 0 0.3rem;
+}
+
+/* .select::-webkit-scrollbar{
+    width: 8px;
+}
+.select::-webkit-scrollbar-track{
+    background: #ffffff;
+}
+.select::-webkit-scrollbar-thumb{
+   background: #888;
+   border-radius: 8px;
+   border-right: 2px solid #ffffff;
+} */
+
+.the-converting-icon{
+    width: fit-content;
+    height: auto;
+}
+
+.the-converting-icon i{
+    transform: rotate(-90deg); /* Rotate the i element -90 degrees counter-clockwise */
+    display: inline-block; /* Ensure the rotated element maintains its inline behavior */
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+
+.currency-exchange-value-display{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin: 0.7rem 0 1.3rem 0;
+}
+
+.currency-exchange-value-display p{
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.the-button{
+    width: 100%;
+    height: auto;
+    
+}
+
+.the-button button{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+    background-color: var(--primary-color-dark);
+    color: var(--white);
+    cursor: pointer;
+}
